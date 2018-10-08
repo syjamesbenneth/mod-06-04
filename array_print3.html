@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<span id="result"></span>
+
+<script type="text/javascript">
+
+	let letters = ["a", "b", "c"]
+	let str = "";
+
+	//First solution
+	// for (row = 0; row < letters.length; row++) {
+	// 	let str2 = "";
+	// 	for (col = 0; col <= row; col++) {
+	// 		str2 = letters[col] + str2;
+	// 	}
+	// 	str += str2 + "<br>";
+	// }
+	// document.getElementById('result').innerHTML = str;
+
+
+	//Second solution
+	for (row = 0; row < letters.length; row++){
+		for(col = row; col >= 0; col--) {
+			document.getElementById('result').innerHTML += letters[col];
+		}
+		document.getElementById('result').innerHTML += "<br>";
+	}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+*
+1. 5x5 square of 
+*****
+*****
+*****
+*****
+*****
+2. upright triangle of *
+*
+**
+***
+****
+*****
+3. upside down triangle of *
+*****
+****
+***
+**
+*
+
+
+xxx
+Exercise
+1. Create a new file called loop_print3.html
+2. Display 1 to 25 in a 5x5 set up
+12345
+678910
+1112131415
+...
+3. Display multiplication table from 1 to 5
+1 2 3 4 5
+2 4 6 8 10
+3 6	9 12 15
+4 
+5 ...
+
+Stretch goal -
+display the output using a table element
+hint: use string concat and tr and td
+
+xxx
+Arrays
+
+//I want to set each student's name as a variable
+
+xxx
+1.Create an array for your row
+2.Using a loop, print out the following:
+"Hello" + each member of your row;
+3.  Place output in a span
+ex. 
+Hello Terence
+Hello Sada
+Hello Billy
+Hello Charles
+
+let row6 = ["Terence", "Sada", "Billy", "Charles"];
+		for (index = 0; index < row6.length; index++)
+			document.getElementById('row6').innerHTML += "Hello " + row6[index] + " <br>";
+
+xxxx
+
+4. using another loop, print out the content of the array in reverse oder.
+let row6 = ["Terence", "Sada", "Billy", "Charles"];
+Hello Charles
+Hello Billy
+Hello Sada
+Hello Terence
+
+
+xxx
+
+1.create a file called array_print2.html
+2.make a js file called array_print2.js
+3.create an array named team_cap with values 'Captain America', 'Falcon', Hawkeye
+4.Create an array teamed team_iron with 'Iron man', War Machine, Black Widow
+5. Add Scarlet Witch and Ant Man to team_cap
+6. Add Vision and Spider Man to team_iron
+7.Display each member of team_cap from Captain America to Ant Man
+8.Display each member from team_iron from Spiderman to ironman
+
+xxxx
+
+display 2 match ups
+a. capt am vs iron man,
+falcon vs War Machine
+hawkeye vs black widow, scarlet  witch vs vision
+ant man vs spiderman
+b. capt am vs spider man, falcon vs vision, hawkeye vs blackwidow, scarlet witch vs warm achine, ant man vs iron man
+11. display outputs in span
+
+xxxx
+
+1.Create a file called 12gifts.html
+2.Given the following array:
+let gifts = ["partridge in a pear tree",
+			"turtle doves",
+			"french hens",
+			"calling birds",
+			"golden rings",
+			"geese a laying",
+			"swans a swimming",
+			"maids a milking",
+			"ladies dancing",
+			"lords a leaping",
+			"pipers piping",
+			"drummers drumming"];
+
+3.Display the following:
+12 drummers drumming, 11 pipers piping, 10 lords a leaping, 9 ladies dancing... and a partridge in a pear tree.
+
+xxx
+1. create a file called array_print3.html
+2. create teh following array:
+let letters = ["a","b","c"]
+3. using 2 loops, output the following:
+a
+ba
+cba
+)use two strings take note of this logic
+str ="a"
+str = "b" + str
+what is str after? "ba"
+str = "c" + str
+what is str after? cba
+xxx
+
+solution:
+	let letters = ["a", "b", "c"]
+	let str = "";
+	for (row = 0; row < letters.length; row++) {
+		let str2 = "";
+		for (col = 0; col <= row; col++) {
+			str2 = letters[col] + str2;
+		}
+		str += str2 + "<br>";
+	}
+	document.getElementById('result').innerHTML = str;
+	xxx
+
+xxx
+
+
+

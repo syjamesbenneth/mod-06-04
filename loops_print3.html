@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+table td {
+	border: 1px solid black;
+}
+</style>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+	<title>Loops</title>
+
+	<body>
+	
+		<table><tbody id="result1"></tbody></table>
+		<hr>
+		<table><tbody id="result2"></tbody></table>
+
+			<script>
+// 		for (var i = 1; i <= 24; i+=1) {
+// 			document.getElementById('result1').innerHTML = i;
+//   		// console.log(i); 
+// }
+
+		//Multiplication table
+		// var result = ' ';
+		// for (var i = 0; i < 11; i++) {
+
+		//     for (var j = 0; j < 11; j++) {
+
+		//         if(i == 0 && j > 0){
+		//           result += '[' + j + ']';
+		//         } 
+		//         else if(j == 0 && i>0){
+		//           result += '[' + i + '] ';
+		//         } 
+		//         else if(i>0 && j>0){
+		//         result += (i*j) + ' ';
+		//         }
+		//     }
+		//     result += '\n'
+		// }
+
+		// console.log(result);
+
+
+		// 5x5 table
+			let num = 1;
+			let str = "";
+			for(row = 1; row < 6; row++) {
+				str+= "<tr>";
+				for(col = 1; col < 6; col++){
+					str += "<td>" + num + "</td>";
+					num++;
+				}
+				str += "<tr>";
+			}
+			document.getElementById('result1').innerHTML = str;
+
+		// Multiplication table
+		let str2 = "";
+		for (row = 1; row <6; row++){
+			str2 += "<tr>";
+			for (col = 1; col < 6; col++){
+				str2 += "<td>" + (row*col) + "</td>";
+			}
+			str += "</tr";
+		}
+		document.getElementById('result2').innerHTML = str2;
+
+			</script>
+				
+			
+		</body>
+
+
+
+		
+
+
+</html>

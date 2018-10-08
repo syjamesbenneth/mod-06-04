@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>12 days</title>
+</head>
+<body>
+
+	<span id="lyrics"></span>
+
+	<script type="text/javascript">
+		let gifts = ["partridge in a pear tree",
+			"turtle doves",
+			"french hens",
+			"calling birds",
+			"golden rings",
+			"geese a laying",
+			"swans a swimming",
+			"maids a milking",
+			"ladies dancing",
+			"lords a leaping",
+			"pipers piping",
+			"drummers drumming"];
+
+			let str = "";
+			for(i = gifts.length -1; i >= 0; i--) {
+				if (i == 0) {
+					str+= " and a " + gifts [i] + "<br>";
+				} else { //range is 11 to 0
+					str += (i+1) + " " + gifts[i] + "<br>";
+				}
+				//range is 11 to 0
+				
+			}
+			document.getElementById('lyrics').innerHTML = str;
+
+			// result.reverse();
+			// for (index = 0; index < ; index++){
+
+			// }
+	</script>
+
+</body>
+</html>

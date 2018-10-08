@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<span id="lyrics"></span>
+
+<script type="text/javascript">
+	let gifts = ["a partridge in a pear tree",
+			"2 turtle doves",
+			"3 french hens",
+			"4 calling birds",
+			"5 golden rings",
+			"6 geese a laying",
+			"7 swans a swimming",
+			"8 maids a milking",
+			"9 ladies dancing",
+			"10 lords a leaping",
+			"11 pipers piping",
+			"12 drummers drumming"];
+
+			for(days = 0; days < gifts.length; days++) {
+				//insert mod06-03 / On the xxx days of Christmas /Insert Switch here
+
+					switch (days) {
+						case 0: 
+						document.getElementById('lyrics').innerHTML += "On the " + (days+1) + "st of christmas my true love sent to me <br>" + "<br>";
+						break;
+						case 1:
+						document.getElementById('lyrics').innerHTML += "On the " + (days+1) + "nd of christmas my true love sent to me <br>" + "<br>";
+						break;
+
+						case 2:
+						document.getElementById('lyrics').innerHTML += "On the " + (days+1) + "nd of christmas my true love sent to me <br>" + "<br>";
+						break;
+					default:
+					document.getElementById('lyrics').innerHTML += "On the " + (days+1) + "th of christmas my true love sent to me <br>" + "<br>";
+					}	
+
+				for(presents = days; presents >= 0; presents --){
+					if (days != 0 && presents == 0){
+					// if not the first day and the gift is the partridge.
+						document.getElementById('lyrics').innerHTML += gifts[presents] + "<br>";
+					} else {
+						document.getElementById('lyrics').innerHTML += gifts[presents] + "<br>" ;
+					}
+				}
+			}
+
+
+
+</script>
+
+</body>
+</html>
